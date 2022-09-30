@@ -1,59 +1,74 @@
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 .container {
-    width: 1200px;
-    margin: 0 auto;
+  width: 1200px;
+  margin: 0 auto;
 }
 .calculator {
-    width: 350px;
-    height: 650px;
-    background-color: black;
+  width: 300px;
+  height: 490px;
+  background-color: black;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  border-radius: 20px;
+  padding: 0 20px;
 }
 .calculator__total {
-    width: 100%;
-    height: 200px;
+  height: 150px;
+  font-size: 50px;
+  color: white;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin: 5px;
 }
 .calculator__wrapper {
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
+display: grid;
+column: 3fr, 1fr;
+row: 1fr, 4fr;
 }
-.btn {
-    padding: 10px;
-    margin: 5px;
-    width: 75px;
-    height: 75px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 32px;
-    background-color: #313131;
-    cursor: pointer;
+.calculator__number {
+
 }
-.btn.btn--grey {
-    background-color: #a4a4a4;
-    color: black;
+.calculator__sign {
+
 }
-.btn.btn--orange {
-    background-color: #fe9f09;
+.calculator__btn {
+  margin-bottom: 5px;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  background-color: #313131;
+  cursor: pointer;
 }
-.btn.btn--big {
-    width: 162px;
-    border-radius: 40px 40px 40px 40px;
-    justify-content: start;
-    padding-left: 30px;
+.calculator__btn.calculator__btn--grey {
+  background-color: #a4a4a4;
+  color: black;
 }
-.btn:active {
-    background-color: #575757;
-    
+.calculator__btn.calculator__btn--orange {
+  background-color: #fe9f09;
 }
-.btn.btn--grey:active {
-    background-color: #cacaca;
+.calculator__btn.calculator__btn--big {
+  width: 130px;
+  border-radius: 40px;
+  justify-content: start;
+  padding-left: 30px;
 }
-.btn.btn--orange:active {
-    background-color: #febd55;
+.calculator__btn:active {
+  background-color: #575757;
 }
+.calculator__btn.calculator__btn--grey:active {
+  background-color: #cacaca;
+}
+.calculator__btn.calculator__btn--orange:active {
+  background-color: #febd55;
+}
+
+
 

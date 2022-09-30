@@ -4,34 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <link rel="stylesheet" href="style.css">
   <title>Calculator</title>
 </head>
 <body>
   <div class="container">
     <div class="calculator">
-      <div class="calculator__total" id="total"></div>
+      <div class="calculator__total">0</div>
       <div class="calculator__wrapper">
-        <button class="btn btn--grey">AC</button>
-        <button class="btn btn--grey">+/-</button>
-        <button class="btn btn--grey">%</button>
-        <button class="btn btn--orange">&#247;</button>
-        <button class="btn">7</button>
-        <button class="btn">8</button>
-        <button class="btn">9</button>
-        <button class="btn btn--orange">&#215;</button>
-        <button class="btn">4</button>
-        <button class="btn">5</button>
-        <button class="btn">6</button>
-        <button class="btn btn--orange">-</button>
-        <button class="btn" id="num1">1</button>
-        <button class="btn" id="num2">2</button>
-        <button class="btn">3</button>
-        <button class="btn btn--orange">+</button>
-        <div class="btn btn--big">0</div>
-        <button class="btn">.</button>
-        <button class="btn btn--orange">=</button>
+        <div class="calculator__sign">
+          <button class="calculator__btn calculator__btn--grey js-set-clear">AC</button>
+          <button class="calculator__btn calculator__btn--grey" data-opearation="+/-">+/-</button>
+          <button class="calculator__btn calculator__btn--grey" data-opearation="%">%</button>
+          <button class="calculator__btn calculator__btn--orange" data-opearation="/">&#247;</button>
+          <button class="calculator__btn calculator__btn--orange" data-opearation="*">&#215;</button>
+          <button class="calculator__btn calculator__btn--orange" data-opearation="-">-</button>
+          <button class="calculator__btn calculator__btn--orange" data-opearation="+">+</button>
+          <button class="calculator__btn calculator__btn--orange" data-opearation="=">=</button>
+        </div>
+        <div class="calculator__number">
+          <button class="calculator__btn" data-number="9">9</button>
+          <button class="calculator__btn" data-number="8">8</button>
+          <button class="calculator__btn" data-number="7">7</button>
+          <button class="calculator__btn" data-number="6">6</button>
+          <button class="calculator__btn" data-number="5">5</button>
+          <button class="calculator__btn" data-number="4">4</button>
+          <button class="calculator__btn" data-number="3">3</button>
+          <button class="calculator__btn" data-number="2">2</button>
+          <button class="calculator__btn" data-number="1">1</button>
+          <button class="calculator__btn calculator__btn--big" data-number="0">0</button>
+          <button class="calculator__btn" data-opearation=".">.</button>
+        </div>
       </div>
     </div>
   </div>
