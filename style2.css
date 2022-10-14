@@ -1,0 +1,14 @@
+html, body{
+	margin: 0;
+}
+.wrapper {
+	display: flex;
+	justify-content: center;
+	margin-top: 100px;
+}
+.inp2::-webkit-inner-spin-button { 
+	display: none; 
+}
+.inp1::-webkit-inner-spin-button {
+	display: none; 
+}
